@@ -1,0 +1,781 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Porfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body class="bg-secondary">
+    <!-- nav bar start  -->
+    <nav class="navbar navbar-expand-lg sticky-top" style="background-color: rgb(95, 94, 94);">
+      <div class="container">
+        <a class="navbar-brand fs-3 fw-bolder" href="#home">My Porfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active text-white-50" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#skill">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#porfolio">Porfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#service">Service</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#freelancer">Freelance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#member">Team Member</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white-50" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- nav bar end  -->
+
+    <!-- home start  -->
+    <section class="home" id="home">
+      <div class="container-lg d-flex">
+        <div class="row justify-content-center align-items-center">
+          <div class="profilepic col-lg-6">
+            <div class="text-center">
+              <img
+                class="rounded-circle"
+                src="./img/myPic.jpg"
+                height="250px"
+                width="250px"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="order-first me-lg-5">
+              <p class="text-white-50">Hello ! I'm</p>
+              <h1 class="text-info">Web Developer</h1>
+              <h3 class="fs-4">Htoo Antt Ko</h3>
+              <p class="my-3">
+                I’m web developer (Laravel). I’ve been learning that for more than a year. Although I still don’t have any on job experience in web development, I have no doubt that I can handle a responsive web page using Laravel & Vue. And I’ve developed POS, e-commerce and portfolio website.
+              </p>
+              <bottom class="btn btn-outline-info px-3 my-4">My CV form</bottom>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- home section end  -->
+
+    <!-- Skill Section  -->
+    <section class="About" id="skill">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center">
+              <h1 class="fw-bold py-5">About Me</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6">
+            <div class="about-text">
+              <h3 class="fs-2 mb-3 text-info">Freelancer</h3>
+            </div>
+            <div>
+              <p class="text-mute">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+                eveniet, corrupti quod itaque a libero sapiente architecto
+                reiciendis, maiores officia incidunt cumque, vel minus
+                recusandae nihil pariatur dolorum quis saepe!
+              </p>
+            </div>
+            <div class="row text-center mt-5 justify-content-center">
+              <div
+                class="col-sm-3 border mx-3 pt-2 border-info rounded-pill mb-3"
+              >
+                <h3 class="fw-bold">100+</h3>
+                <p>Project completed</p>
+              </div>
+              <div
+                class="col-sm-3 border mx-3 pt-2 border-info rounded-pill mb-3"
+              >
+                <h3 class="fw-bold">95+</h3>
+                <p>Happy client</p>
+              </div>
+              <div
+                class="col-sm-3 border mx-3 pt-2 border-info rounded-pill mb-3"
+              >
+                <h3 class="fw-bold">98+</h3>
+                <p>Positive Reviews</p>
+              </div>
+            </div>
+            <div class="row my-4">
+              <div class="col-md-6">
+                <button class="download-cv btn btn-info px-3">
+                  Download CV
+                </button>
+              </div>
+              <div class="col-md-6 pt-1 fs-5">
+                <i class="fa-brands fa-facebook-f px-2"></i>
+                <i class="fa-brands fa-instagram px-2"></i>
+                <i class="fa-brands fa-twitter px-2"></i>
+                <i class="fa-brands fa-whatsapp px-2"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="laravel-bar my-4">
+              <h3 class="fs-5 fw-bold">Laravel</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 90%"
+                ></div>
+              </div>
+            </div>
+            <div class="php-bar my-4">
+              <h3 class="fs-5 fw-bold">PHP</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+            <div class="vue-bar my-4">
+              <h3 class="fs-5 fw-bold">VueJS</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+            <div class="js-bar my-4">
+              <h3 class="fs-5 fw-bold">Javascript</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="jquery-bar my-4">
+              <h3 class="fs-5 fw-bold">Jquery</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="bootstrap-bar my-4">
+              <h3 class="fs-5 fw-bold">Bootstrap</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 80%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="api-bar my-4">
+              <h3 class="fs-5 fw-bold">API</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="mysql-bar my-4">
+              <h3 class="fs-5 fw-bold">MySQL</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="ajax-bar my-4">
+              <h3 class="fs-5 fw-bold">Ajax</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 75%"
+                ></div>
+              </div>
+            </div>
+
+            <div class="web-bar my-4">
+              <h3 class="fs-5 fw-bold">Responsive Web Page</h3>
+              <div
+                class="progress"
+                role="progressbar"
+                aria-label="Default striped example"
+                aria-valuenow="10"
+                aria-valuemin="0"
+                aria-valuemax="100"
+                style="height: 5px"
+              >
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 85%"
+                ></div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Skill section end  -->
+
+    <!-- Service Section  -->
+    <section class="service" id="service">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center">
+              <h1 class="fw-bold py-5">What Can I Do ?</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- project  -->
+        <div class="row mx-5">
+          <div class="col-lg-4">
+            <div
+              class="project-item border border-info rounded-4 shadow-lg p-3 text-center mb-3"
+            >
+              <div class="icon fs-2 text-info py-3">
+                <i class="fa-solid fa-code"></i>
+              </div>
+              <h3>Web Development</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                earum, repellendus et alias, optio dolorem dignissimos ea,
+                consequatur eveniet fugit tempore aspernatur corporis
+                perspiciatis labore autem placeat non dolores nobis?
+              </p>
+            </div>
+          </div>
+
+          <!-- project end  -->
+
+          <!-- project  -->
+          <div class="col-lg-4">
+            <div
+              class="project-item border border-info rounded-4 shadow-lg p-3 text-center mb-3"
+            >
+              <div class="icon fs-2 text-info py-3">
+                <i class="fa-regular fa-lightbulb"></i>
+              </div>
+              <h3>Creative Idea</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                earum, repellendus et alias, optio dolorem dignissimos ea,
+                consequatur eveniet fugit tempore aspernatur corporis
+                perspiciatis labore autem placeat non dolores nobis?
+              </p>
+            </div>
+          </div>
+          <!-- project end  -->
+
+          <!-- project  -->
+          <div class="col-lg-4">
+            <div
+              class="project-item border border-info rounded-4 shadow-lg p-3 text-center mb-3"
+            >
+              <div class="icon fs-2 text-info py-3">
+                <i class="fa-regular fa-image"></i>
+              </div>
+              <h3>Photoshop</h3>
+              <p class="text-muted">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat
+                earum, repellendus et alias, optio dolorem dignissimos ea,
+                consequatur eveniet fugit tempore aspernatur corporis
+                perspiciatis labore autem placeat non dolores nobis?
+              </p>
+            </div>
+          </div>
+          <!-- project end  -->
+        </div>
+      </div>
+    </section>
+    <!-- Service Section end  -->
+
+    <!-- latest projest  -->
+    <section class="latest-project" id="porfolio">
+      <div class="container-lg">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="text-center">
+              <h1 class="fw-bold py-5">Latest Project</h1>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mx-5">
+          <div class="col-lg-4 col-md-6">
+            <div class="item my-4">
+              <img
+                src="./img/coreui_free_1440.webp"
+                class="w-100 img-thumbnail shadow-lg"
+                style="height: 220px"
+              />
+              <h3 class="fs-5 mt-3">Admin Dashboard</h3>
+              <p>
+                <a
+                  class="text-decoration-none text-info border border-info py-1 px-3 rounded-3"
+                  href="#"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="item my-4">
+              <img
+                src="./img/pic2.webp"
+                class="w-100 img-thumbnail shadow-lg"
+                style="height: 220px"
+              />
+              <h3 class="fs-5 mt-3">Team Section</h3>
+              <p>
+                <a
+                  class="text-decoration-none text-info border border-info py-1 px-3 rounded-3"
+                  href="#"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="item my-4">
+              <img
+                src="./img/pic3.jpg"
+                class="w-100 img-thumbnail shadow-lg"
+                style="height: 220px"
+              />
+              <h3 class="fs-5 mt-3">Creative Team Dashboard</h3>
+              <p>
+                <a
+                  class="text-decoration-none text-info border border-info py-1 px-3 rounded-3"
+                  href="#"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="item my-4">
+              <img
+                src="./img/pic4.jpg"
+                class="w-100 img-thumbnail shadow-lg"
+                style="height: 220px"
+              />
+              <h3 class="fs-5 mt-3">Image Gallery</h3>
+              <p>
+                <a
+                  class="text-decoration-none text-info border border-info py-1 px-3 rounded-3"
+                  href="#"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="item my-4">
+              <img
+                src="./img/pic5.webp"
+                class="w-100 img-thumbnail shadow-lg"
+                style="height: 220px"
+              />
+              <h3 class="fs-5 mt-3">Daily News</h3>
+              <p>
+                <a
+                  class="text-decoration-none text-info border border-info py-1 px-3 rounded-3"
+                  href="#"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="item my-4">
+              <img
+                src="./img/pic6.png"
+                class="w-100 img-thumbnail shadow-lg"
+                style="height: 220px"
+              />
+              <h3 class="fs-5 mt-3">Pizza Order System</h3>
+              <p>
+                <a
+                  class="text-decoration-none text-info border border-info py-1 px-3 rounded-3"
+                  href="#"
+                  >Live Demo</a
+                >
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- latest project end  -->
+
+    <!-- freelancer section  -->
+    <section class="freelancer border border-info rounded-5" id="freelancer">
+      <div class="container-lg py-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8 text-center">
+            <p>Do you have any Projects ?</p>
+            <h2 class="text-info fs-1">
+              I'm Available for Freelancer Projects !
+            </h2>
+            <a href="#" class="btn btn-outline-info px-4 mt-3">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- freelancer section end  -->
+
+    <!-- member  -->
+    <section class="member" id="member">
+      <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <h1 class="fw-bold py-5">Our Team Member</h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="0"
+                class="active"
+                aria-current="true"
+                aria-label="Slide 1"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="1"
+                aria-label="Slide 2"
+              ></button>
+              <button
+                type="button"
+                data-bs-target="#carouselExampleIndicators"
+                data-bs-slide-to="2"
+                aria-label="Slide 3"
+              ></button>
+            </div>
+            <div class="carousel-inner">
+              <!-- card  -->
+              <div
+                class="carousel-item active border border-info rounded-4 p-4"
+              
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./img/devpic2.png"
+                    class="rounded-circle img-thumbnail"
+                    style="height: 200px; width: 200px"
+                  />
+
+                  <div class="ms-4">
+                    <h3>Senior Web Developer</h3>
+                    <p>Kyaw Kyaw</p>
+                  </div>
+                </div>
+                <p class="mt-3 text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis vel veritatis ipsam repellat minus laudantium? Sint
+                  alias aliquam eligendi soluta, quas ipsam distinctio provident
+                  impedit excepturi labore omnis earum ab!
+                </p>
+                <div class="">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <!-- card end  -->
+
+              <!-- card  -->
+              <div
+                class="carousel-item border border-info rounded-4 p-4"
+                
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./img/devpic1.avif"
+                    class="rounded-circle img-thumbnail"
+                    style="height: 200px; width: 200px"
+                  />
+
+                  <div class="ms-4">
+                    <h3>Senior Web Developer</h3>
+                    <p>Tun Tun</p>
+                  </div>
+                </div>
+                <p class="mt-3 text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis vel veritatis ipsam repellat minus laudantium? Sint
+                  alias aliquam eligendi soluta, quas ipsam distinctio provident
+                  impedit excepturi labore omnis earum ab!
+                </p>
+               
+                    <div class="">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                
+              </div>
+              <!-- card end  -->
+
+              <!-- card  -->
+              <div
+                class="carousel-item border border-info rounded-4 p-4"
+               
+              >
+                <div class="d-flex align-items-center">
+                  <img
+                    src="./img/dvepic3.jpg"
+                    class="rounded-circle img-thumbnail"
+                    style="height: 200px; width: 200px"
+                  />
+
+                  <div class="ms-4">
+                    <h3>Senior Web Developer</h3>
+                    <p>Noe Noe</p>
+                  </div>
+                </div>
+                <p class="mt-3 text-muted">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Corporis vel veritatis ipsam repellat minus laudantium? Sint
+                  alias aliquam eligendi soluta, quas ipsam distinctio provident
+                  impedit excepturi labore omnis earum ab!
+                </p>
+                <div class="">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </div>
+              </div>
+              <!-- card end  -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- member end  -->
+
+    <!-- contact section  -->
+    <section class="contact" id="contact">
+        <div class="row justify-content-center mt-5">
+        <div class="col-lg-8">
+          <div class="text-center">
+            <h1 class="fw-bold py-5">Contact Us</h1>
+          </div>
+        </div>
+      </div>
+      
+      <div class="row mx-5">
+        <!-- left side contact start  -->
+        <div class="col-md-5">
+          <div class="contact-item">
+            <div class="d-flex ">
+              <div class="icon">
+                <i class="fa-solid fa-phone fs-4 "></i>
+              </div>
+              <div class="text text-info ms-2">
+                <h4>Phone </h4>
+                <p class="text-muted">+959 976 902451</p>
+              </div>
+            </div>
+
+            <div class="d-flex ">
+              <div class="icon">
+                <i class="fa-solid fa-envelope fs-4"></i>
+              </div>
+              <div class="text text-info ms-2">
+                <h4>Email </h4>
+                <p class="text-muted">kohtooantt@gmail.com</p>
+              </div>
+            </div>
+
+           <div class="d-flex ">
+            <div class="icon">
+              <i class="fa-solid fa-map-location-dot  fs-4"></i>
+            </div>
+            <div class="text text-info ms-2">
+              <h4>Address </h4>
+              <p class="text-muted">Yangon</p>
+            </div>
+           </div>
+          </div>
+        </div>
+        <!-- left side contact end  -->
+
+        <!-- right sided contact start  -->
+        <div class="col-md-7">
+          <form action="">
+            <div class="row">
+              <div class="col-md-6">
+                <input type="text" name="userName" id="" class="form-control mb-3" placeholder="Your Name" required>
+              </div>
+              <div class="col-md-6">
+                <input type="text" name="Email" id="" class="form-control mb-3" placeholder="Your Eamil" required>
+              </div>
+            </div>
+            <input type="text" name="" id="" class="form-control mb-3" placeholder="Suject">
+            <textarea name="message" placeholder="Your Message" class="form-control mb-3" id="" cols="30" rows="10"></textarea>
+
+            <input type="button" value="Send" class="btn btn-outline-info px-4 mb-3">
+          </form>
+        </div>
+        <!-- right sided contact end  -->
+      </div>
+    </section>
+    <!-- contact section end  -->
+
+    <!-- Footer section  -->
+    <div class="footer">
+      <div class="container-fluid border border-info">
+        <div class="row">
+          <div class="col-lg-12 pt-2">
+            <p class="text-muted text-center">We are trying to find the best of yours !</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Footer section end  -->
+  </body>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+</html>
