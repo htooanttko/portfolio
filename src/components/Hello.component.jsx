@@ -1,12 +1,12 @@
-import { Stack, Typography } from '@mui/material'
+import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
 
 function Hello() {
     return (
-        <Stack height={"100vh"} flex={1} justifyContent={'center'} alignContent={'center'} className='bg-primary text-secondary'>
+        <Box height={"100vh"} flex={1} justifyContent={'center'} alignContent={'center'} bgcolor={'primary.main'}>
             <Stack flex={1} direction={'row'} justifyContent={'space-evenly'} alignContent={'center'} >
                 <Typography alignContent={'center'} >
-                    <Typography fontWeight={'bold'} className='uppercase'>
+                    <Typography color={'primary'} fontWeight={'bold'} className='uppercase'>
                         Hello, I am a
                     </Typography>
                     <Typography variant="h3" fontWeight={'bold'} paddingY={2} className='capitalize'>
@@ -16,9 +16,9 @@ function Hello() {
                 </Typography>
                 <Typography alignContent={'center'} >
                     hi
-                    \</Typography>
+                </Typography>
             </Stack>
-        </Stack >
+        </Box >
     )
 }
 
