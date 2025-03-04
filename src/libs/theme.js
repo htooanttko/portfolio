@@ -8,21 +8,21 @@ export const theme = createTheme({
         secondary: {
             main: "#BB9E7C",
         },
-        tertiary: {
+        text: {
             main: "#FFFFFF",
         },
     },
-    typography: {
-        fontFamily: ["Jost"],
-    },
-    MuiListButton: {
-        fontFamily: ["Jost"],
-    },
+    // typography: {
+    //     fontFamily: ["Jost"],
+    // },
+    // MuiListButton: {
+    //     fontFamily: ["Jost"],
+    // },
     components: {
         MuiButton: {
             styleOverrides: {
                 root: {
-                    fontFamily: ["Jost"],
+                    // fontFamily: ["Jost"],
                     textTransform: "none",
                     fontWeight: "500",
                 },

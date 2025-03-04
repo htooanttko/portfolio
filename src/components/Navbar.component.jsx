@@ -34,7 +34,7 @@ function Navbar(props) {
                     <Typography
                         variant="h6"
                         component="div"
-                        className='text-secondary'
+                        color='text'
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
                         MUI
@@ -42,7 +42,7 @@ function Navbar(props) {
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item) => (
                             <Button key={item} sx={{ marginX: 2 }}>
-                                <Typography className='text-secondary capitalize'>
+                                <Typography color='text' className='capitalize'>
                                     {item}
                                 </Typography>
                             </Button>

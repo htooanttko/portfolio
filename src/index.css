@@ -4,4 +4,20 @@
 
 html {
     scroll-behavior: smooth;
-  }
+}
+  
+::-webkit-scrollbar {
+  background: #3D352A;
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BB9E7C;
+  border-radius: 2px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #BB9E7C; 
+  opacity: 1;
+}
