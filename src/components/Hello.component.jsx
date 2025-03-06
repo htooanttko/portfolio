@@ -2,6 +2,7 @@ import { Box, Stack, Typography } from '@mui/material'
 import React from 'react'
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import ProfileImage from './common/ProfileImage.common';
 
 function Hello() {
     const { ref, inView } = useInView({
@@ -28,15 +29,14 @@ function Hello() {
                     <Typography color='text'>Hi, I am Htoo Antt Ko, a passionated Full Stack Developer based in Myanmar. <br /> Welcome to portfolio world.</Typography>
                 </Typography>
                 <Typography
-                    variant="h3"
                     ref={ref}
                     component={motion.div}
                     initial={{ opacity: 0 }}
                     animate={{ opacity: inView ? 1 : 0 }}
                     transition={{ duration: 1.2 }}
-                    alignContent={'center'}
+                    alignContent={'end'}
                 >
-                    hi hi he hee
+                    <ProfileImage />
                 </Typography>
             </Stack>
         </Box>

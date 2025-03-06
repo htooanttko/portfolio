@@ -34,7 +34,11 @@ function Skills() {
                     container spacing={5} marginTop={3}>
                     {skills.map((list, index) => (
                         <Grid key={index} item xs={6} md={2}>
-                            <Paper className="p-4 mx-5 text-center flex items-center justify-center aspect-square">{list.name}</Paper>
+                            <Paper className="p-4 mx-5 text-center flex items-center justify-center aspect-square">
+                                <Typography color='primary' variant='p'>
+                                    {list.name}
+                                </Typography>
+                            </Paper>
                         </Grid>
                     ))}
                 </Grid>

@@ -7,12 +7,21 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-import DrawerComponent from './common/DrawerComponent.commom';
+import DrawerComponent from './common/DrawerComponent.common';
 import { navItems } from '../utils/navItems';
 
-function Navbar(props) {
-    const { window } = props;
+function Navbar({ handleScroll, refs, window }) {
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { helloRef, aboutRef, skillsRef, servicesRef, packagesRef, contactRef } = refs;
+
+    const sectionRefs = {
+        Hello: helloRef,
+        About: aboutRef,
+        Skills: skillsRef,
+        Services: servicesRef,
+        "Packages & Pricing": packagesRef,
+        Contact: contactRef,
+    };
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -27,7 +36,7 @@ function Navbar(props) {
                         aria-label="open drawer"
                         edge="start"
                         onClick={handleDrawerToggle}
-                        sx={{ mr: 2, display: { sm: 'none' } }}
+                        sx={{ mr: 2, display: { md: 'none' } }}
                     >
                         <MenuIcon />
                     </IconButton>
@@ -35,13 +44,13 @@ function Navbar(props) {
                         variant="h6"
                         component="div"
                         color='text'
-                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                        sx={{ flexGrow: 1, display: { xs: 'none', md: 'block' } }}
                     >
                         MUI
                     </Typography>
-                    <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+                    <Box sx={{ display: { xs: 'none', md: 'block' } }}>
                         {navItems.map((item) => (
-                            <Button key={item} sx={{ marginX: 2 }}>
+                            <Button key={item} sx={{ marginX: 2 }} onClick={() => handleScroll(sectionRefs[item])} >
                                 <Typography color='text' className='capitalize'>
                                     {item}
                                 </Typography>
@@ -54,6 +63,8 @@ function Navbar(props) {
                 window={window}
                 mobileOpen={mobileOpen}
                 handleDrawerToggle={handleDrawerToggle}
+                handleScroll={handleScroll}
+                refs={refs}
             />
         </Box >
     );

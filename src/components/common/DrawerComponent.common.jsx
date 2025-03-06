@@ -11,11 +11,22 @@ import { navItems } from '../../utils/navItems';
 function DrawerComponent({
     window,
     mobileOpen,
-    handleDrawerToggle
+    handleDrawerToggle,
+    handleScroll,
+    refs
 }) {
-
     const drawerWidth = 240;
     const container = window !== undefined ? () => window().document.body : undefined;
+    const { helloRef, aboutRef, skillsRef, servicesRef, packagesRef, contactRef } = refs;
+
+    const sectionRefs = {
+        Hello: helloRef,
+        About: aboutRef,
+        Skills: skillsRef,
+        Services: servicesRef,
+        "Packages & Pricing": packagesRef,
+        Contact: contactRef,
+    };
 
     return (
         <Drawer
@@ -27,7 +38,7 @@ function DrawerComponent({
                 keepMounted: true,
             }}
             sx={{
-                display: { xs: 'block', sm: 'none' },
+                display: { xs: 'block', md: 'none' },
                 '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
             }}
         >
@@ -38,8 +49,8 @@ function DrawerComponent({
                 <Divider />
                 <List>
                     {navItems.map((item) => (
-                        <ListItem key={item} disablePadding>
-                            <ListItemButton sx={{ textAlign: 'center' }}>
+                        <ListItem key={item} disablePadding >
+                            <ListItemButton sx={{ textAlign: 'center' }} onClick={() => handleScroll(sectionRefs[item])}>
                                 <ListItemText primary={item} />
                             </ListItemButton>
                         </ListItem>

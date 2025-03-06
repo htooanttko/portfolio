@@ -37,13 +37,14 @@ function Services() {
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
                     transition={{ duration: 0.5 }}
-                    marginTop={5}>
+                    marginTop={8}
+                >
                     <Swiper
                         spaceBetween={50}
                         slidesPerView={3}
                         loop
-                        speed={1000}
-                        autoplay={{ delay: 3000, disableOnInteraction: false }}
+                        // speed={1000}
+                        // autoplay={{ delay: 5000, disableOnInteraction: false }}
                         navigation={false}
                         pagination={{ clickable: true, el: "#custom-pagination" }}
                         modules={[Navigation, Pagination, Autoplay]}
@@ -53,8 +54,8 @@ function Services() {
                             <SwiperSlide key={index}>
                                 <Card className="p-4">
                                     <CardContent className="flex flex-col items-center">
-                                        <Typography variant="h6">Slide {list.title}</Typography>
-                                        <Typography variant="body2">This is slide {list.description} content.</Typography>
+                                        <Typography color='primary' variant="h6">Slide {list.title}</Typography>
+                                        <Typography color='primary' variant="body2">This is slide {list.description} content.</Typography>
                                     </CardContent>
                                 </Card>
                             </SwiperSlide>
