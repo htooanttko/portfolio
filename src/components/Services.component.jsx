@@ -53,9 +53,9 @@ function Services() {
                         {services.map((list, index) => (
                             <SwiperSlide key={index}>
                                 <Card className="p-4">
-                                    <CardContent className="flex flex-col items-center">
-                                        <Typography color='primary' variant="h6">Slide {list.title}</Typography>
-                                        <Typography color='primary' variant="body2">This is slide {list.description} content.</Typography>
+                                    <CardContent className="flex flex-col">
+                                        <Typography color='primary' variant="h6" fontWeight={'bold'} marginBottom={1}>{list.title}</Typography>
+                                        <Typography color='primary' variant="body2">{list.description}</Typography>
                                     </CardContent>
                                 </Card>
                             </SwiperSlide>

@@ -1,42 +1,76 @@
+import JavascriptIcon from '@mui/icons-material/Javascript';
+
 export const skills = [
     {
         name: 'Javascript',
-        url: '/path/to/js.png'
+        icon: JavascriptIcon,
     },
     {
-        name: 'Javascript',
-        url: '/path/to/js.png'
+        name: 'mysql',
+        icon: JavascriptIcon,
     },
     {
-        name: 'Javascript',
-        url: '/path/to/js.png'
+        name: 'mongo',
+        icon: JavascriptIcon,
     },
     {
-        name: 'Javascript',
-        url: '/path/to/js.png'
+        name: 'web dev',
+        icon: JavascriptIcon,
     },
     {
-        name: 'Javascript',
-        url: '/path/to/js.png'
+        name: 'react',
+        icon: JavascriptIcon,
     },
     {
-        name: 'Javascript',
-        url: '/path/to/js.png'
+        name: 'nodejs',
+        icon: JavascriptIcon,
     },
     {
-        name: 'Javascript',
-        url: '/path/to/js.png'
+        name: 'express',
+        icon: JavascriptIcon,
     },
     {
-        name: 'Javascript',
-        url: '/path/to/js.png'
+        name: 'php',
+        icon: JavascriptIcon,
     },
     {
-        name: 'Javascript',
-        url: '/path/to/js.png'
+        name: 'laravel',
+        icon: JavascriptIcon,
     },
     {
-        name: 'Javascript',
-        url: '/path/to/js.png'
+        name: 'docker',
+        icon: JavascriptIcon,
+    },
+    {
+        name: 'ci/cd',
+        icon: JavascriptIcon,
+    },
+    {
+        name: 'cloud computing',
+        icon: JavascriptIcon,
+    },
+    {
+        name: 'hosting',
+        icon: JavascriptIcon,
+    },
+    {
+        name: 'linux',
+        icon: JavascriptIcon,
+    },
+    {
+        name: 'nginx',
+        icon: JavascriptIcon,
+    },
+    {
+        name: 'devops',
+        icon: JavascriptIcon,
+    },
+    {
+        name: 'figma',
+        icon: JavascriptIcon,
+    },
+    {
+        name: 'ui ux',
+        icon: JavascriptIcon,
     },
 ];

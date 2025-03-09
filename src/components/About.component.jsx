@@ -31,7 +31,7 @@ function About() {
                     animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
                     transition={{ duration: 0.5 }}
                     color='text' marginTop={5}>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nulla neque quidem. Debitis animi iure mollitia vero, ea atque deleniti soluta iste necessitatibus quas provident neque adipisci blanditiis nobis aut? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita, hic? Natus totam at et voluptates. Consequatur fugit sed commodi minus fugiat, beatae, eaque voluptatum facere molestiae aspernatur, laborum quisquam nemo.
+                    I'm a proficient backend developer with over 1.5 years of experience. Skilled in PHP, Laravel, Node.js, and React.js, I specialize in building responsive web applications and efficient backend systems. I am a fast learner, quick to adapt, and continually expanding my knowledge in cloud computing and DevOps. My expertise spans backend and frontend technologies, database management, DevOps practices, and UI/UX design. I offer services in full-stack development, server management, cloud computing, CI/CD automation, and SEO optimization to help businesses build and scale their digital presence.
                 </Typography>
             </Stack>
         </Box>

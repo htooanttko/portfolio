@@ -33,11 +33,16 @@ function Skills() {
                     transition={{ duration: 0.5 }}
                     container spacing={5} marginTop={3}>
                     {skills.map((list, index) => (
-                        <Grid key={index} item xs={6} md={2}>
-                            <Paper className="p-4 mx-5 text-center flex items-center justify-center aspect-square">
-                                <Typography color='primary' variant='p'>
-                                    {list.name}
-                                </Typography>
+                        <Grid key={index} item xs={6} md={1.5} className='flex justify-center'>
+                            <Paper className="p-1 w-[15vh] text-center flex items-center justify-center aspect-square">
+                                <Stack direction={'column'} alignItems={'center'}>
+                                    <Typography>
+                                        <list.icon  />
+                                    </Typography>
+                                    <Typography color='primary' variant='p' fontSize={'small'} fontWeight={'bold'}>
+                                        {list.name}
+                                    </Typography>
+                                </Stack>
                             </Paper>
                         </Grid>
                     ))}

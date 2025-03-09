@@ -2,6 +2,9 @@ import React from 'react'
 import { Box, Grid, Paper, Stack, Typography } from "@mui/material";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import BasicPlanComponent from './common/BasicPlanComponent.common';
+import StandardComponent from './common/StandardComponent.common';
+import PremiumComponent from './common/PremiumComponent.common';
 
 function Packages() {
     const { ref, inView } = useInView({
@@ -36,69 +39,13 @@ function Packages() {
                     paddingX={10}
                 >
                     <Grid item xs={12} md={4} alignContent={'end'}>
-                        <Paper className="p-4 mx-5 text-center flex items-center justify-center relative h-[80vh]">
-                            <Typography
-                                color='text'
-                                component="span"
-                                position={'absolute'}
-                                fontWeight={'bold'}
-                                bgcolor={'secondary.main'}
-                                paddingX={5}
-                                paddingY={1}
-                                border={1}
-                                borderRadius={1}
-                                sx={{
-                                    top: "-15px",
-                                    // left: "20px",
-                                }}
-                            >
-                                Basic Plan
-                            </Typography>
-                        </Paper>
+                        <BasicPlanComponent />
                     </Grid>
                     <Grid item xs={12} md={4} alignContent={'end'}>
-                        <Paper className="p-4 mx-5 text-center flex items-center justify-center relative h-[85vh]">
-                            <Typography
-                                color='text'
-                                // variant='h6'
-                                component="span"
-                                position={'absolute'}
-                                fontWeight={'bold'}
-                                bgcolor={'secondary.main'}
-                                paddingX={5}
-                                paddingY={1}
-                                border={1}
-                                borderRadius={1}
-                                sx={{
-                                    top: "-15px",
-                                    // left: "20px",
-                                }}
-                            >
-                                Standard
-                            </Typography>
-                        </Paper>
+                        <StandardComponent />
                     </Grid>
                     <Grid item xs={12} md={4} alignContent={'end'}>
-                        <Paper className="p-4 mx-5 text-center flex items-center justify-center relative h-[80vh]">
-                            <Typography
-                                color='text'
-                                // variant='h6'
-                                component="span"
-                                position={'absolute'}
-                                fontWeight={'bold'}
-                                bgcolor={'secondary.main'}
-                                paddingX={5}
-                                paddingY={1}
-                                border={1}
-                                borderRadius={1}
-                                sx={{
-                                    top: "-15px",
-                                    // left: "20px",
-                                }}
-                            >
-                                Premium
-                            </Typography>
-                        </Paper>
+                        <PremiumComponent />
                     </Grid>
                 </Grid>
             </Stack>
