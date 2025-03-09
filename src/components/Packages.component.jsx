@@ -38,7 +38,7 @@ function Packages() {
                     marginTop={{ md: 3, xs: 1 }}
                 // paddingX={{ md: 10, xs: 5 }}
                 >
-                    <Grid item xs={12} md={4} alignContent={'start'} marginTop={3}>
+                    <Grid item xs={12} md={4} alignContent={'start'} marginTop={{ md: 3, xs: 0 }}>
                         <BasicPlanComponent />
                     </Grid>
                     <Grid item xs={12} md={4} alignContent={'start'} >

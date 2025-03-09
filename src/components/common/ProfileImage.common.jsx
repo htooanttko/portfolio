@@ -20,7 +20,7 @@ function ProfileImage() {
                 boxShadow="0 0 0 10px white"
                 bgcolor={'secondary.main'}
             ></Box>
-            <img className='w-full h-full relative z-10' src="/imgs/me.png" alt="profile" />
+            <img className='w-full h-full relative z-10' src="/portfolio/imgs/me.png" alt="profile" />
         </Box>
     )
 }
