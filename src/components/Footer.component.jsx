@@ -13,7 +13,7 @@ function Footer({ handleScroll, refs }) {
         Contact: contactRef,
     };
     return (
-        <Stack component='footer' textAlign={'center'} alignItems={'center'} bgcolor={'secondary.main'} paddingTop={2} paddingBottom={1}>
+        <Stack component='footer' textAlign={'center'} alignItems={'center'} bgcolor={'secondary.main'} paddingTop={{ md: 2, xs: 1 }} paddingBottom={{ md: 1, xs: 0 }}>
             <Typography variant='p' color='text' fontWeight={'bold'} fontSize={"small"}>&copy; 2025 Htoo Antt Ko. Built with ❤️ using React.</Typography>
             <Box>
                 {navItems.map((item) => (

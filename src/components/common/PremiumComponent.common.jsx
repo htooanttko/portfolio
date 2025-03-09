@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 function PremiumComponent() {
     return (
-        <Paper className="p-2 py-5 flex justify-center h-[95vh]">
+        <Paper className="p-2 py-5 flex justify-center">
             {/* <Typography
                 color='text'
                 // variant='h6'

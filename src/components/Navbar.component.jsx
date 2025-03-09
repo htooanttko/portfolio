@@ -38,7 +38,7 @@ function Navbar({ handleScroll, refs, window }) {
                         onClick={handleDrawerToggle}
                         sx={{ mr: 2, display: { md: 'none' } }}
                     >
-                        <MenuIcon />
+                        <MenuIcon sx={{ color: 'text.main' }} />
                     </IconButton>
                     <Typography
                         variant="h6"

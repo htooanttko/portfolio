@@ -13,7 +13,7 @@ function Skills() {
         <Box bgcolor='primary.main'>
             <Stack
                 bgcolor={'primary.main'}
-                padding={10}
+                padding={{ md: 10, xs: 5 }}
             >
                 <Stack
                     ref={ref}
@@ -31,13 +31,13 @@ function Skills() {
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
                     transition={{ duration: 0.5 }}
-                    container spacing={5} marginTop={3}>
+                    container spacing={5} marginTop={{ md: 3, xs: 1 }}>
                     {skills.map((list, index) => (
                         <Grid key={index} item xs={6} md={1.5} className='flex justify-center'>
                             <Paper className="p-1 w-[15vh] text-center flex items-center justify-center aspect-square">
                                 <Stack direction={'column'} alignItems={'center'}>
                                     <Typography>
-                                        <list.icon  />
+                                        <list.icon />
                                     </Typography>
                                     <Typography color='primary' variant='p' fontSize={'small'} fontWeight={'bold'}>
                                         {list.name}

@@ -19,7 +19,7 @@ function Services() {
         <Box bgcolor='primary.main'>
             <Stack
                 bgcolor={'primary.main'}
-                padding={10}
+                padding={{ md: 10, xs: 5 }}
             >
                 <Stack
                     ref={ref}
@@ -29,7 +29,7 @@ function Services() {
                     transition={{ duration: 0.5 }}
                     direction={'row'} alignItems={'center'}>
                     <Typography flex={1} fontWeight={'bold'} color={'text'} variant='h6'>Services</Typography>
-                    <Typography flex={3} borderTop={3} color='text'></Typography>
+                    <Typography flex={{ md: 3, xs: 2 }} borderTop={3} color='text'></Typography>
                 </Stack>
                 <Stack
                     ref={ref}
@@ -37,11 +37,15 @@ function Services() {
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
                     transition={{ duration: 0.5 }}
-                    marginTop={8}
+                    marginTop={{ md: 8, xs: 5 }}
                 >
                     <Swiper
                         spaceBetween={50}
-                        slidesPerView={3}
+                        // slidesPerView={3}
+                        breakpoints={{
+                            640: { slidesPerView: 1 },
+                            850: { slidesPerView: 3 }
+                        }}
                         loop
                         // speed={1000}
                         // autoplay={{ delay: 5000, disableOnInteraction: false }}

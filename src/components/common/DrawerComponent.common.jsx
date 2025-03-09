@@ -42,7 +42,7 @@ function DrawerComponent({
                 '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
             }}
         >
-            <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }} className='bg-primary h-full text-secondary'>
+            <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }} className='h-full' bgcolor={'secondary.main'} color={'text.main'}>
                 <Typography variant="h6" sx={{ my: 2 }}>
                     MUI
                 </Typography>

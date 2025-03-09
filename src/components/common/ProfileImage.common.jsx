@@ -4,16 +4,16 @@ import React from 'react'
 function ProfileImage() {
     return (
         <Box
-            width={500}
-            height={500}
+            width={{ md: 500, xs: 300 }}
+            height={{ md: 500, xs: 300 }}
             position={'relative'}
             display="flex"
             alignItems="center"
             justifyContent="center"
         >
             <Box
-                width={500}
-                height={420}
+                width={{ md: 500, xs: 300 }}
+                height={{ md: 420, xs: 220 }}
                 borderRadius={3}
                 position={'absolute'}
                 border="5px solid white"

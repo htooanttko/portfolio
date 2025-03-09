@@ -6,18 +6,20 @@ import ProfileImage from './common/ProfileImage.common';
 
 function Hello() {
     const { ref, inView } = useInView({
-        threshold: 0.5,
+        threshold: 0.3,
     });
 
     return (
         <Box flex={1} justifyContent={'center'} alignContent={'center'} bgcolor={'primary.main'}>
-            <Stack height={'100vh'} flex={1} direction={'row'} justifyContent={'space-evenly'} alignContent={'center'} >
+            <Stack height={{ md: '100vh', xs: '130vh' }} flex={1} direction={{ md: 'row', xs: 'column' }} alignContent={'center'} >
                 <Typography
                     ref={ref}
                     component={motion.div}
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }}
                     transition={{ duration: 0.5 }}
+                    flex={{ md: 1, xs: 2 }}
+                    paddingX={5}
                     alignContent={'center'}
                 >
                     <Typography color='text' fontWeight={'bold'} variant='h6' className='uppercase'>
@@ -34,6 +36,8 @@ function Hello() {
                     initial={{ opacity: 0 }}
                     animate={{ opacity: inView ? 1 : 0 }}
                     transition={{ duration: 1.2 }}
+                    flex={1}
+                    justifyItems={'center'}
                     alignContent={'end'}
                 >
                     <ProfileImage />

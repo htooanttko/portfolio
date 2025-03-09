@@ -5,24 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 function BasicPlanComponent() {
     return (
-        <Paper className="p-2 py-5 flex justify-center h-[95vh]">
-            {/* <Typography
-                color='text'
-                component="span"
-                position={'absolute'}
-                fontWeight={'bold'}
-                bgcolor={'secondary.main'}
-                paddingX={5}
-                paddingY={1}
-                border={1}
-                borderRadius={1}
-                sx={{
-                    top: "-15px",
-                    // left: "20px",
-                }}
-            >
-                Basic Plan
-            </Typography> */}
+        <Paper className="p-2 py-5 flex justify-center ">
             <Typography>
                 <Typography
                     variant={'h6'}
@@ -37,12 +20,12 @@ function BasicPlanComponent() {
                 <br />
                 <p>Services:</p>
                 <ul>
-                    <li><CheckIcon color='success' />Basic Frontend (React, HTML, CSS)</li>
+                    <li><CheckIcon color='success' />Basic Frontend</li>
                     <li><CheckIcon color='success' />Basic Backend (Node.js/Express or PHP/Laravel)</li>
                     <li><CheckIcon color='success' />Hosting setup (Deploy on DigitalOcean, Vercel, or shared hosting)</li>
                     <li><CheckIcon color='success' />Basic CI/CD (Automated deployment setup)</li>
                     <li><CheckIcon color='success' />Linux server setup (Basic Nginx configuration)</li>
-                    <li><CheckIcon color='success' />Basic UI/UX design using Figma (limited revisions)</li>
+                    <li><CheckIcon color='success' />Basic UI/UX design using Figma</li>
                 </ul>
                 <br />
                 <ul>

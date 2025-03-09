@@ -15,7 +15,7 @@ function Packages() {
         <Box bgcolor='secondary.main'>
             <Stack
                 bgcolor={'secondary.main'}
-                padding={10}
+                padding={{ md: 10, xs: 5 }}
             >
                 <Stack
                     ref={ref}
@@ -24,7 +24,7 @@ function Packages() {
                     animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : -50 }}
                     transition={{ duration: 0.5 }}
                     direction={'row'} alignItems={'center'}>
-                    <Typography flex={3} borderTop={3} color='text'></Typography>
+                    <Typography flex={{ md: 13, xs: 2 }} borderTop={3} color='text'></Typography>
                     <Typography flex={1} fontWeight={'bold'} textAlign={'end'} color={'text'} variant='h6'>Packages</Typography>
                 </Stack>
                 <Grid
@@ -35,16 +35,16 @@ function Packages() {
                     transition={{ duration: 0.5 }}
                     container
                     spacing={5}
-                    marginTop={3}
-                    paddingX={10}
+                    marginTop={{ md: 3, xs: 1 }}
+                // paddingX={{ md: 10, xs: 5 }}
                 >
-                    <Grid item xs={12} md={4} alignContent={'end'}>
+                    <Grid item xs={12} md={4} alignContent={'start'} marginTop={3}>
                         <BasicPlanComponent />
                     </Grid>
-                    <Grid item xs={12} md={4} alignContent={'end'}>
+                    <Grid item xs={12} md={4} alignContent={'start'} >
                         <StandardComponent />
                     </Grid>
-                    <Grid item xs={12} md={4} alignContent={'end'}>
+                    <Grid item xs={12} md={4} alignContent={'start'} marginTop={3}>
                         <PremiumComponent />
                     </Grid>
                 </Grid>

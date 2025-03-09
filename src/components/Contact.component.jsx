@@ -21,7 +21,7 @@ function Contact() {
         <Box bgcolor='primary.main' >
             <Stack
                 bgcolor={'primary.main'}
-                padding={10}
+                padding={{ md: 10, xs: 5 }}
             >
                 <Stack
                     ref={ref}
@@ -39,31 +39,37 @@ function Contact() {
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
                     transition={{ duration: 0.5 }}
-                    color='text' marginTop={5} paddingX={10}>
-                    <Card className="text-center items-center">
-                        <CardContent className="relative content-center">
-                            {copied && (
+                    color='text'
+                    marginTop={{ md: 5, xs: 4 }}
+                    paddingX={{ md: 10, xs: 1 }}
+                >
+                    <Card>
+                        <CardContent>
+                            <Stack textAlign={'center'}>
+                                {copied && (
+                                    <Typography
+                                        variant="span"
+                                        fontSize={'small'}
+                                        bgcolor={'grey'}
+                                        color='primary'
+                                        paddingX={1}
+                                        borderRadius={2}
+                                        className="absolute opacity-60 bottom-0"
+                                    >
+                                        Copied!
+                                    </Typography>
+                                )}
                                 <Typography
-                                    variant="span"
-                                    fontSize={'small'}
-                                    bgcolor={'grey'}
                                     color='primary'
-                                    paddingX={1}
-                                    borderRadius={2}
-                                    className="absolute opacity-60 bottom-0"
+                                    variant="body1"
+                                    fontWeight={'bold'}
+                                    className="cursor-pointer"
+                                    onClick={handleCopy}
+                                    alignContent={'center'}
                                 >
-                                    Copied!
+                                    Gmail - kohtooantt@gmail.com
                                 </Typography>
-                            )}
-                            <Typography
-                                color='primary'
-                                variant="body1"
-                                fontWeight={'bold'}
-                                className="cursor-pointer"
-                                onClick={handleCopy}
-                            >
-                                Gmail - kohtooantt@gmail.com
-                            </Typography>
+                            </Stack>
                         </CardContent>
                     </Card>
 

@@ -5,7 +5,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 function StandardComponent() {
     return (
-        <Paper sx={{ border: 2, borderColor: "primary.main" }} className="p-2 py-8 flex justify-center relative h-[98vh]">
+        <Paper sx={{ border: 2, borderColor: "primary.main" }} className="p-2 py-8 flex justify-center relative">
             <Typography
                 color='text'
                 component="span"
