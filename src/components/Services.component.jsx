@@ -47,8 +47,8 @@ function Services() {
                             850: { slidesPerView: 3 }
                         }}
                         loop
-                        // speed={1000}
-                        // autoplay={{ delay: 5000, disableOnInteraction: false }}
+                        speed={1000}
+                        autoplay={{ delay: 5000, disableOnInteraction: false }}
                         navigation={false}
                         pagination={{ clickable: true, el: "#custom-pagination" }}
                         modules={[Navigation, Pagination, Autoplay]}
