@@ -1,76 +1,74 @@
-import JavascriptIcon from '@mui/icons-material/Javascript';
-
 export const skills = [
-    {
-        name: 'Javascript',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'mysql',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'mongo',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'web dev',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'react',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'nodejs',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'express',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'php',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'laravel',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'docker',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'ci/cd',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'cloud computing',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'hosting',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'linux',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'nginx',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'devops',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'figma',
-        icon: JavascriptIcon,
-    },
-    {
-        name: 'ui ux',
-        icon: JavascriptIcon,
-    },
+  {
+    name: "Javascript",
+    url: "js.png",
+  },
+  {
+    name: "Mysql",
+    url: "mysql.png",
+  },
+  {
+    name: "MongoDB",
+    url: "mongodb.png",
+  },
+  {
+    name: "Web Development",
+    url: "web-dev.png",
+  },
+  {
+    name: "React",
+    url: "react.png",
+  },
+  {
+    name: "Node.js",
+    url: "node-js.png",
+  },
+  {
+    name: "Express JS",
+    url: "express.png",
+  },
+  {
+    name: "PHP",
+    url: "php.png",
+  },
+  {
+    name: "Laravel",
+    url: "laravel.png",
+  },
+  {
+    name: "Docker",
+    url: "docker.png",
+  },
+  {
+    name: "CI/CD",
+    url: "cicd.png",
+  },
+  {
+    name: "Cloud Computing",
+    url: "cloud-compute.png",
+  },
+  {
+    name: "Hosting",
+    url: "hosting.png",
+  },
+  {
+    name: "Linux",
+    url: "linux.png",
+  },
+  {
+    name: "Nginx",
+    url: "nginx.png",
+  },
+  {
+    name: "Figma",
+    url: "figma.png",
+  },
+  {
+    name: "UI/UX",
+    url: "ux.png",
+  },
+  {
+    name: "Kubernetes",
+    url: "kubernetes.png",
+  },
 ];
