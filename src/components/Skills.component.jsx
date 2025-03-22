@@ -11,8 +11,8 @@ function Skills() {
   });
 
   return (
-    <Box bgcolor="primary.main">
-      <Stack bgcolor={"primary.main"} padding={{ md: 10, xs: 5 }}>
+    <Box>
+      <Stack padding={{ md: 10, xs: 5 }}>
         <Stack
           ref={ref}
           component={motion.div}
@@ -51,14 +51,18 @@ function Skills() {
               md={1.5}
               className="flex justify-center"
             >
-              <Paper className="p-1 w-[20vh] text-center flex items-center justify-center aspect-square">
+              <Paper
+                sx={{
+                  bgcolor: "primary.main",
+                }}
+                className="p-1 w-[20vh] text-center flex items-center justify-center aspect-square"
+              >
                 <Stack direction={"column"} alignItems={"center"}>
                   <Typography padding={3}>
-                    {/* <list.icon /> */}
                     <Icons url={list.url} type="skills" />
                   </Typography>
                   <Typography
-                    color="primary"
+                    color="text"
                     variant="p"
                     fontSize={"small"}
                     fontWeight={"bold"}

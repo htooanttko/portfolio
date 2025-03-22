@@ -1,13 +1,13 @@
-import { Stack } from '@mui/material'
-import Navbar from './components/Navbar.component';
-import Hello from './components/Hello.component';
-import About from './components/About.component';
-import Skills from './components/Skills.component';
-import Services from './components/Services.component';
-import Packages from './components/Packages.component';
-import Contact from './components/Contact.component';
-import Footer from './components/Footer.component';
-import { useRef } from 'react';
+import Navbar from "./components/Navbar.component";
+import Hello from "./components/Hello.component";
+import About from "./components/About.component";
+import Skills from "./components/Skills.component";
+import Services from "./components/Services.component";
+import Packages from "./components/Packages.component";
+import Contact from "./components/Contact.component";
+import Footer from "./components/Footer.component";
+import { useRef } from "react";
+import { Box } from "@mui/material";
 
 function App() {
   const helloRef = useRef(null);
@@ -23,16 +23,48 @@ function App() {
 
   return (
     <>
-      <Navbar handleScroll={handleScroll} refs={{ helloRef, aboutRef, skillsRef, servicesRef, packagesRef, contactRef }} />
+      <Navbar
+        handleScroll={handleScroll}
+        refs={{
+          helloRef,
+          aboutRef,
+          skillsRef,
+          servicesRef,
+          packagesRef,
+          contactRef,
+        }}
+      />
 
-      <div ref={helloRef}><Hello /></div>
-      <div ref={aboutRef}><About /></div>
-      <div ref={skillsRef}><Skills /></div>
-      <div ref={servicesRef}><Services /></div>
-      <div ref={packagesRef}><Packages /></div>
-      <div ref={contactRef}><Contact /></div>
+      <div ref={helloRef}>
+        <Hello />
+      </div>
+      <div ref={aboutRef}>
+        <About />
+      </div>
+      <div ref={skillsRef}>
+        <Skills />
+      </div>
+      <div ref={servicesRef}>
+        <Services />
+      </div>
+      <div ref={packagesRef}>
+        <Packages />
+      </div>
+      <div ref={contactRef}>
+        <Contact />
+      </div>
 
-      <Footer handleScroll={handleScroll} refs={{ helloRef, aboutRef, skillsRef, servicesRef, packagesRef, contactRef }} />
+      <Footer
+        handleScroll={handleScroll}
+        refs={{
+          helloRef,
+          aboutRef,
+          skillsRef,
+          servicesRef,
+          packagesRef,
+          contactRef,
+        }}
+      />
     </>
   );
 }

@@ -12,74 +12,13 @@ function ProfileImage() {
       justifyContent="center"
     >
       <Box
-        component="img"
-        src="/portfolio/imgs/hello/cloud.png"
-        alt="icon3"
-        width={40}
-        height={40}
-        position="absolute"
-        top={80}
-        left={60}
-        zIndex={5}
-        sx={{ opacity: 0.7 }}
-      />
-      <Box
-        component="img"
-        src="/portfolio/imgs/hello/code.png"
-        alt="icon1"
-        width={40}
-        height={40}
-        position="absolute"
-        top={200}
-        left={100}
-        zIndex={5}
-        sx={{ transform: "rotate(-15deg)", opacity: 0.8 }}
-      />
-      <Box
-        component="img"
-        src="/portfolio/imgs/hello/continuous.png"
-        alt="icon3"
-        width={40}
-        height={40}
-        position="absolute"
-        bottom={100}
-        left={30}
-        zIndex={5}
-        sx={{ transform: "rotate(-20deg)" }}
-      />
-      <Box
-        component="img"
-        src="/portfolio/imgs/hello/github.png"
-        alt="icon3"
-        width={40}
-        height={40}
-        position="absolute"
-        top={150}
-        right={80}
-        zIndex={5}
-        sx={{ transform: "rotate(20deg)", opacity: 0.7 }}
-      />
-      <Box
-        component="img"
-        src="/portfolio/imgs/hello/devops.png"
-        alt="icon2"
-        width={50}
-        height={50}
-        position="absolute"
-        bottom={150}
-        right={30}
-        zIndex={5}
-        sx={{ transform: "rotate(10deg)", opacity: 0.7 }}
-      />
-
-      <Box
-        width={{ md: 500, xs: 300 }}
+        width={{ md: 420, xs: 300 }}
         height={{ md: 420, xs: 220 }}
-        borderRadius={3}
+        borderRadius={2}
         position={"absolute"}
-        border="5px solid white"
-        boxShadow="0 0 0 10px white"
-        bgcolor={"secondary.main"}
+        // border="5px solid white"
+        // boxShadow="0 0 0 10px white"
+        bgcolor={"rgba(187,158,124,0.5)"}
       />
       <Box
         component="img"
@@ -89,6 +28,9 @@ function ProfileImage() {
         height={"100%"}
         position="relative"
         zIndex={10}
+        sx={{
+          filter: "brightness(95%)",
+        }}
       />
     </Box>
   );
