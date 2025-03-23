@@ -44,6 +44,7 @@ function Footer({ handleScroll, refs }) {
               fontSize={"small"}
               fontWeight={"bold"}
               className="capitalize"
+              sx={{ textDecoration: "underline" }}
             >
               {item}
             </Typography>

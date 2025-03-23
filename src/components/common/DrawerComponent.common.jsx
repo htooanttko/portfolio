@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Stack, Typography } from "@mui/material";
 import Divider from "@mui/material/Divider";
 import Drawer from "@mui/material/Drawer";
 import List from "@mui/material/List";
@@ -7,6 +7,7 @@ import ListItem from "@mui/material/ListItem";
 import ListItemButton from "@mui/material/ListItemButton";
 import ListItemText from "@mui/material/ListItemText";
 import { navItems } from "../../utils/navItems";
+import Icons from "./Icons.common";
 
 function DrawerComponent({
   window,
@@ -57,8 +58,13 @@ function DrawerComponent({
         bgcolor={"primary.main"}
         color={"text.main"}
       >
-        <Typography variant="h6" sx={{ my: 2 }}>
-          MUI
+        <Typography
+          variant="h6"
+          sx={{ my: 2, display: "flex", justifyContent: "center" }}
+        >
+          <Stack width={"10vh"}>
+            <Icons url={"logo.png"} type="" invert="invert(1)" />
+          </Stack>
         </Typography>
         <Divider />
         <List>

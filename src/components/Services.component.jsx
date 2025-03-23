@@ -16,6 +16,7 @@ import "swiper/css/pagination";
 import "swiper/css/autoplay";
 import { Autoplay, Navigation, Pagination } from "swiper/modules";
 import { services } from "../utils/serviceslist";
+import Icons from "./common/Icons.common";
 
 function Services() {
   const { ref, inView } = useInView({
@@ -74,6 +75,9 @@ function Services() {
                   }}
                 >
                   <CardContent className="flex flex-col">
+                    <Typography padding={1} width={"15vh"}>
+                      <Icons url={list.url} type="services" />
+                    </Typography>
                     <Typography
                       color="text"
                       variant="h6"

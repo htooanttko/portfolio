@@ -11,6 +11,15 @@ function Hello() {
     threshold: 0.1,
   });
 
+  const handleDownloadCV = () => {
+    const link = document.createElement("a");
+    link.href = "/portfolio/imgs/hello/htoo_antt_ko.pdf";
+    link.download = "htoo_antt_ko(cv).pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <Box flex={1} justifyContent={"center"} alignContent={"center"}>
       <Stack
@@ -56,28 +65,32 @@ function Hello() {
           </Typography>
           <Stack
             paddingTop={5}
-            direction={{ xs: "column", md: "row" }}
-            // direction={"row"}
+            direction={{ xs: "column", sm: "row" }}
             justifyContent={"space-between"}
             gap={2}
           >
             <Stack>
-              <Button variant="outlined" color="secondary">
+              <Button
+                variant="outlined"
+                color="secondary"
+                onClick={handleDownloadCV}
+              >
                 Download CV
               </Button>
             </Stack>
             <Stack
               direction={"row"}
               gap={2}
-              width={"60vh"}
+              width={{ sm: "50vh", xs: "40vh" }}
               alignSelf={"center"}
             >
               {contacts.map((list, index) => (
                 <Stack
                   key={index}
                   bgcolor={"primary.main"}
-                  padding={1}
+                  padding={{ sm: 1, xs: 0.5 }}
                   borderRadius={1}
+                  onClick={() => window.open(list.link, "_blank")}
                 >
                   <Icons url={list.url} type="contact" />
                 </Stack>

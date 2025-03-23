@@ -9,6 +9,8 @@ import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import DrawerComponent from "./common/DrawerComponent.common";
 import { navItems } from "../utils/navItems";
+import Icons from "./common/Icons.common";
+import { Stack } from "@mui/material";
 
 function Navbar({ handleScroll, refs, window }) {
   const [mobileOpen, setMobileOpen] = React.useState(false);
@@ -58,7 +60,9 @@ function Navbar({ handleScroll, refs, window }) {
             color="text"
             sx={{ flexGrow: 1, display: { xs: "none", md: "block" } }}
           >
-            MUI
+            <Stack width={"10vh"}>
+              <Icons url={"logo.png"} type="" invert="invert(1)" />
+            </Stack>
           </Typography>
           <Box sx={{ display: { xs: "none", md: "block" } }}>
             {navItems.map((item) => (
@@ -67,7 +71,11 @@ function Navbar({ handleScroll, refs, window }) {
                 sx={{ marginX: 2 }}
                 onClick={() => handleScroll(sectionRefs[item])}
               >
-                <Typography color="text" className="capitalize">
+                <Typography
+                  fontWeight={"bold"}
+                  color="text"
+                  className="capitalize"
+                >
                   {item}
                 </Typography>
               </Button>

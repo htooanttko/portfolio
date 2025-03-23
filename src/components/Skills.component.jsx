@@ -12,7 +12,7 @@ function Skills() {
 
   return (
     <Box>
-      <Stack padding={{ md: 10, xs: 5 }}>
+      <Stack padding={{ md: 10, xs: 0 }} paddingY={{ xs: 5 }}>
         <Stack
           ref={ref}
           component={motion.div}
@@ -21,6 +21,7 @@ function Skills() {
           transition={{ duration: 0.5 }}
           direction={"row"}
           alignItems={"center"}
+          paddingX={{ xs: 5 }}
         >
           <Typography flex={3} borderTop={3} color="text"></Typography>
           <Typography
@@ -33,47 +34,44 @@ function Skills() {
             Skills
           </Typography>
         </Stack>
-        <Grid
+        <Stack
           ref={ref}
+          direction={"row"}
+          gap={3}
+          flexWrap={"wrap"}
+          justifyContent={"center"}
           component={motion.div}
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
           transition={{ duration: 0.5 }}
-          container
-          spacing={5}
-          marginTop={{ md: 3, xs: 1 }}
+          marginTop={{ md: 8, xs: 5 }}
+          paddingX={{ xs: 1 }}
         >
           {skills.map((list, index) => (
-            <Grid
+            <Paper
               key={index}
-              item
-              xs={6}
-              md={1.5}
-              className="flex justify-center"
+              sx={{
+                bgcolor: "primary.main",
+                width: { sm: "15vh", xs: "10vh" },
+              }}
+              className="p-1 text-center flex items-center justify-center aspect-square"
             >
-              <Paper
-                sx={{
-                  bgcolor: "primary.main",
-                }}
-                className="p-1 w-[20vh] text-center flex items-center justify-center aspect-square"
-              >
-                <Stack direction={"column"} alignItems={"center"}>
-                  <Typography padding={3}>
-                    <Icons url={list.url} type="skills" />
-                  </Typography>
-                  <Typography
-                    color="text"
-                    variant="p"
-                    fontSize={"small"}
-                    fontWeight={"bold"}
-                  >
-                    {list.name}
-                  </Typography>
-                </Stack>
-              </Paper>
-            </Grid>
+              <Stack direction={"column"} alignItems={"center"}>
+                <Typography padding={1}>
+                  <Icons url={list.url} type="skills" />
+                </Typography>
+                <Typography
+                  color="text"
+                  variant="p"
+                  fontSize={{ sm: "small", xs: "8px" }}
+                  fontWeight={"bold"}
+                >
+                  {list.name}
+                </Typography>
+              </Stack>
+            </Paper>
           ))}
-        </Grid>
+        </Stack>
       </Stack>
     </Box>
   );

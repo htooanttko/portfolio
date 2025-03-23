@@ -47,7 +47,6 @@ function Packages() {
           container
           spacing={5}
           marginTop={{ md: 3, xs: 1 }}
-          // paddingX={{ md: 10, xs: 5 }}
         >
           <Grid
             item

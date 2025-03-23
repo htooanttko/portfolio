@@ -4,7 +4,7 @@ export const skills = [
     url: "js.png",
   },
   {
-    name: "Mysql",
+    name: "MySQL",
     url: "mysql.png",
   },
   {

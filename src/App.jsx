@@ -8,6 +8,7 @@ import Contact from "./components/Contact.component";
 import Footer from "./components/Footer.component";
 import { useRef } from "react";
 import { Box } from "@mui/material";
+import { Toaster } from "react-hot-toast";
 
 function App() {
   const helloRef = useRef(null);
@@ -22,7 +23,8 @@ function App() {
   };
 
   return (
-    <>
+    <Box sx={{ overflowX: "hidden" }}>
+      <Toaster position="top-right" />
       <Navbar
         handleScroll={handleScroll}
         refs={{
@@ -65,7 +67,7 @@ function App() {
           contactRef,
         }}
       />
-    </>
+    </Box>
   );
 }
 

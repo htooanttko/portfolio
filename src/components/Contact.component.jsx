@@ -4,17 +4,16 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Icons from "./common/Icons.common";
 import { contacts } from "../utils/contactlist";
+import toast from "react-hot-toast";
 
 function Contact() {
-  const [copied, setCopied] = useState(false);
   const { ref, inView } = useInView({
     threshold: 0.5,
   });
 
   const handleCopy = () => {
     navigator.clipboard.writeText("kohtooantt@gmail.com");
-    setCopied(true);
-    setTimeout(() => setCopied(false), 3000);
+    toast.success("Copied");
   };
 
   return (
@@ -58,45 +57,39 @@ function Contact() {
                   justifyContent={"center"}
                   gap={2}
                 >
-                  {copied && (
-                    <Typography
-                      variant="span"
-                      fontSize={"small"}
-                      bgcolor={"grey"}
-                      color="text"
-                      paddingX={1}
-                      borderRadius={2}
-                      className="absolute opacity-60 top-0 z-50"
-                    >
-                      Copied!
-                    </Typography>
-                  )}
                   <Stack width={"4vh"}>
                     <Icons url={"email.png"} type="contact" />
                   </Stack>
-                  <Typography fontWeight={"bold"} color="text">
+                  <Typography
+                    fontWeight={"bold"}
+                    color="text"
+                    sx={{ textDecoration: "underline" }}
+                  >
                     kohtooantt@gmail.com
                   </Typography>
                 </Stack>
               </Stack>
-              <Stack paddingTop={3}>
+              <Stack paddingTop={2}>
                 <Stack
                   direction={"row"}
                   gap={2}
-                  width={"60vh"}
+                  width={{ sm: "37vh", xs: "30vh" }}
                   alignSelf={"center"}
                   justifyContent={"center"}
                 >
-                  {contacts.map((list, index) => (
-                    <Stack
-                      key={index}
-                      bgcolor={"secondary.main"}
-                      padding={1}
-                      borderRadius={1}
-                    >
-                      <Icons url={list.url} type="contact" />
-                    </Stack>
-                  ))}
+                  {contacts
+                    .filter((list) => list.name !== "github")
+                    .map((list, index) => (
+                      <Stack
+                        key={index}
+                        bgcolor={"secondary.main"}
+                        padding={{ sm: 1, xs: 0.5 }}
+                        borderRadius={1}
+                        onClick={() => window.open(list.link, "_blank")}
+                      >
+                        <Icons url={list.url} type="contact" />
+                      </Stack>
+                    ))}
                 </Stack>
               </Stack>
             </CardContent>
