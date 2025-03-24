@@ -60,7 +60,7 @@ function Services() {
             }}
             loop
             speed={1000}
-            autoplay={{ delay: 5000, disableOnInteraction: false }}
+            autoplay={{ delay: 3000, disableOnInteraction: false }}
             navigation={false}
             pagination={{ clickable: true, el: "#custom-pagination" }}
             modules={[Navigation, Pagination, Autoplay]}

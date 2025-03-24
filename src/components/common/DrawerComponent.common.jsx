@@ -62,7 +62,7 @@ function DrawerComponent({
           variant="h6"
           sx={{ my: 2, display: "flex", justifyContent: "center" }}
         >
-          <Stack width={"10vh"}>
+          <Stack width={"8vh"}>
             <Icons url={"logo.png"} type="" invert="invert(1)" />
           </Stack>
         </Typography>

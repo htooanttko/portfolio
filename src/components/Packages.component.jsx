@@ -5,6 +5,9 @@ import { useInView } from "react-intersection-observer";
 import BasicPlanComponent from "./common/BasicPlanComponent.common";
 import StandardComponent from "./common/StandardComponent.common";
 import PremiumComponent from "./common/PremiumComponent.common";
+import AdditionalServices from "./common/AdditionalServices.common";
+import WhyChooseUs from "./common/WhyChooseUs.common";
+import WhyRecommend from "./common/WhyRecommend.common";
 
 function Packages() {
   const { ref, inView } = useInView({
@@ -38,32 +41,45 @@ function Packages() {
             Packages
           </Typography>
         </Stack>
-        <Grid
+        <Stack
           ref={ref}
           component={motion.div}
           initial={{ opacity: 0, x: 50 }}
           animate={{ opacity: inView ? 1 : 0, x: inView ? 0 : 50 }}
           transition={{ duration: 0.5 }}
-          container
-          spacing={5}
-          marginTop={{ md: 3, xs: 1 }}
         >
-          <Grid
-            item
-            xs={12}
-            md={4}
-            alignContent={"start"}
-            marginTop={{ md: 3, xs: 0 }}
+          <Grid container spacing={5} marginTop={{ md: 3, xs: 1 }}>
+            <Grid
+              item
+              xs={12}
+              md={4}
+              alignContent={"start"}
+              marginTop={{ md: 3, xs: 0 }}
+            >
+              <BasicPlanComponent />
+            </Grid>
+            <Grid item xs={12} md={4} alignContent={"start"}>
+              <StandardComponent />
+            </Grid>
+            <Grid item xs={12} md={4} alignContent={"start"} marginTop={3}>
+              <PremiumComponent />
+            </Grid>
+          </Grid>
+          <Stack
+            direction={{ md: "row", xs: "column" }}
+            marginTop={{ md: 10, xs: 5 }}
           >
-            <BasicPlanComponent />
-          </Grid>
-          <Grid item xs={12} md={4} alignContent={"start"}>
-            <StandardComponent />
-          </Grid>
-          <Grid item xs={12} md={4} alignContent={"start"} marginTop={3}>
-            <PremiumComponent />
-          </Grid>
-        </Grid>
+            <Stack flex={1}>
+              <AdditionalServices />
+            </Stack>
+            <Stack flex={1} marginTop={{ md: 0, xs: 5 }}>
+              <WhyRecommend />
+            </Stack>
+          </Stack>
+          <Stack flex={1} marginTop={{ md: 10, xs: 5 }}>
+            <WhyChooseUs />
+          </Stack>
+        </Stack>
       </Stack>
     </Box>
   );

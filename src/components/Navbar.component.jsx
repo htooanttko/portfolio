@@ -28,7 +28,7 @@ function Navbar({ handleScroll, refs, window }) {
     About: aboutRef,
     Skills: skillsRef,
     Services: servicesRef,
-    "Packages & Pricing": packagesRef,
+    Packages: packagesRef,
     Contact: contactRef,
   };
 
@@ -60,7 +60,7 @@ function Navbar({ handleScroll, refs, window }) {
             color="text"
             sx={{ flexGrow: 1, display: { xs: "none", md: "block" } }}
           >
-            <Stack width={"10vh"}>
+            <Stack width={"5vh"}>
               <Icons url={"logo.png"} type="" invert="invert(1)" />
             </Stack>
           </Typography>

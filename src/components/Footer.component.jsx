@@ -16,7 +16,7 @@ function Footer({ handleScroll, refs }) {
     About: aboutRef,
     Skills: skillsRef,
     Services: servicesRef,
-    "Packages & Pricing": packagesRef,
+    Packages: packagesRef,
     Contact: contactRef,
   };
   return (

@@ -1,58 +1,85 @@
-import React from 'react'
-import { Paper, Typography } from '@mui/material'
-import CheckIcon from '@mui/icons-material/Check';
-import CloseIcon from '@mui/icons-material/Close';
+import React from "react";
+import { Paper, Stack, Typography } from "@mui/material";
+import CheckIcon from "@mui/icons-material/Check";
+import CloseIcon from "@mui/icons-material/Close";
+import DiamondIcon from "@mui/icons-material/Diamond";
 
 function PremiumComponent() {
-    return (
-        <Paper className="p-2 py-5 flex justify-center">
-            {/* <Typography
-                color='text'
-                // variant='h6'
-                component="span"
-                position={'absolute'}
-                fontWeight={'bold'}
-                bgcolor={'secondary.main'}
-                paddingX={5}
-                paddingY={1}
-                border={1}
-                borderRadius={1}
-                sx={{
-                    top: "-15px",
-                    // left: "20px",
-                }}
-            >
-                Premium
-            </Typography> */}
-            <Typography>
-                <Typography
-                    variant={'h6'}
-                    component="p"
-                    fontWeight={'bold'}
-                    marginBottom={3}
-                >
-                    Premium
-                </Typography>
-                <p>Large businesses or serious projects.</p>
-                <br />
-                <p>Services:</p>
-                <ul>
-                    <li><CheckIcon color='success' />Everything in Standard</li>
-                    <li><CheckIcon color='success' />Load Balancing & Scalability</li>
-                    <li><CheckIcon color='success' />Microservices Architecture Setup</li>
-                    <li><CheckIcon color='success' />Kubernetes (Future Addition)</li>
-                    <li><CheckIcon color='success' />High Availability & Auto Scaling</li>
-                    <li><CheckIcon color='success' />Security & Performance Tuning</li>
-                    <li><CheckIcon color='success' />24/7 Monitoring & Support</li>
-                    <li><CheckIcon color='success' />Premium UI/UX design with Figma (unlimited revisions).</li>
-                </ul>
-                <br />
-                <ul>
-                    <li><CloseIcon color='error' />Custom enterprise solutions outside the package.</li>
-                </ul>
-            </Typography >
-        </Paper>
-    )
+  return (
+    <Paper className="p-2 py-5 flex justify-center">
+      <Stack gap={4}>
+        <Typography
+          variant={"h6"}
+          component="p"
+          fontWeight={"bold"}
+          marginBottom={2}
+        >
+          Premium
+        </Typography>
+        <Stack spacing={1}>
+          <Typography variant="p">
+            For enterprises & complex applications (Large business sites, custom
+            web apps, complex platforms.)
+          </Typography>
+          <Typography
+            variant="small"
+            component={"small"}
+            color="secondary.main"
+          >
+            <DiamondIcon
+              color="primary"
+              sx={{ marginRight: 1, fontSize: "20px" }}
+            />
+            Best for large projects with more pages and advanced features
+          </Typography>
+        </Stack>
+        <Stack direction={"column"}>
+          <Typography variant="p" fontSize={"15px"}>
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />
+            Everything in Standard Package +
+          </Typography>
+          <Typography variant="p" fontSize={"15px"}>
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />
+            Advanced Hosting & Deployment (Cloud VPS, Nginx, Load Balancing)
+          </Typography>
+          <Typography variant="p" fontSize={"15px"}>
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />
+            Backend: Multi-role access, payment integration
+          </Typography>
+          <Typography variant="p" fontSize={"15px"}>
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />
+            Database: Replication + backups
+          </Typography>
+          <Typography variant="p" fontSize={"15px"}>
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />
+            DevOps: Zero-downtime deployment, load balancing.
+          </Typography>
+          <Typography variant="p" fontSize={"15px"}>
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />
+            SEO Optimization (On-page SEO + schema markup)
+          </Typography>
+          <Typography variant="p" fontSize={"15px"}>
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />
+            Priority Support
+          </Typography>
+          <Typography variant="p" fontSize={"15px"}>
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />
+            Unlimited Revision
+          </Typography>
+          <Typography variant="p" fontSize={"15px"}>
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />
+            Up to 15 Pages
+          </Typography>
+        </Stack>
+        <Stack>
+          <Typography variant="p" component={"p"}>
+            <Typography fontWeight={"bold"}>Estimated Delivery: </Typography>4 -
+            8 weeks
+          </Typography>
+        </Stack>
+      </Stack>
+    </Paper>
+  );
 }
 
-export default PremiumComponent
+export default PremiumComponent;
