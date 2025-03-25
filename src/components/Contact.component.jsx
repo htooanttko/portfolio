@@ -31,7 +31,11 @@ function Contact() {
           <Typography flex={1} fontWeight={"bold"} color={"text"} variant="h6">
             Contact
           </Typography>
-          <Typography flex={3} borderTop={3} color="text"></Typography>
+          <Typography
+            flex={{ md: 3, xs: 2 }}
+            borderTop={3}
+            color="text"
+          ></Typography>
         </Stack>
         <Typography
           ref={ref}

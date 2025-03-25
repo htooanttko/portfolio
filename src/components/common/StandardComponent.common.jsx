@@ -80,7 +80,7 @@ function StandardComponent() {
             Performance & Security Enhancements (SSL, Caching, Firewalls)
           </Typography>
           <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />3 Free Revision
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />6 Free Revision
           </Typography>
           <Typography variant="p" fontSize={"15px"}>
             <CheckIcon color="success" sx={{ marginRight: 1 }} />

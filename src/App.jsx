@@ -38,7 +38,12 @@ function App() {
       />
 
       <div ref={helloRef}>
-        <Hello />
+        <Hello
+          handleScroll={handleScroll}
+          refs={{
+            packagesRef,
+          }}
+        />
       </div>
       <div ref={aboutRef}>
         <About />

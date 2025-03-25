@@ -67,16 +67,16 @@ function Packages() {
           </Grid>
           <Stack
             direction={{ md: "row", xs: "column" }}
-            marginTop={{ md: 10, xs: 5 }}
+            marginTop={{ md: 10, xs: 8 }}
           >
             <Stack flex={1}>
               <AdditionalServices />
             </Stack>
-            <Stack flex={1} marginTop={{ md: 0, xs: 5 }}>
+            <Stack flex={1} marginTop={{ md: 0, xs: 8 }}>
               <WhyRecommend />
             </Stack>
           </Stack>
-          <Stack flex={1} marginTop={{ md: 10, xs: 5 }}>
+          <Stack flex={1} marginTop={{ md: 10, xs: 8 }}>
             <WhyChooseUs />
           </Stack>
         </Stack>

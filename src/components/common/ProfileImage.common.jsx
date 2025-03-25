@@ -22,7 +22,7 @@ function ProfileImage() {
       />
       <Box
         component="img"
-        src="/portfolio/imgs/hello/me.png"
+        src="/imgs/hello/me.png"
         alt="profile"
         width={"100%"}
         height={"100%"}

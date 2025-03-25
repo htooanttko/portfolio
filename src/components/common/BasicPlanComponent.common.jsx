@@ -59,7 +59,7 @@ function BasicPlanComponent() {
             SEO Optimization (Basic on-page SEO, metadata)
           </Typography>
           <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />1 Free Revision
+            <CheckIcon color="success" sx={{ marginRight: 1 }} />3 Free Revision
           </Typography>
           <Typography variant="p" fontSize={"15px"}>
             <CheckIcon color="success" sx={{ marginRight: 1 }} />
@@ -69,7 +69,7 @@ function BasicPlanComponent() {
         <Stack>
           <Typography variant="p" component={"p"}>
             <Typography fontWeight={"bold"}>Estimated Delivery: </Typography>1 -
-            2 weeks
+            3 weeks
           </Typography>
         </Stack>
       </Stack>

@@ -64,7 +64,7 @@ function PremiumComponent() {
           </Typography>
           <Typography variant="p" fontSize={"15px"}>
             <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            Unlimited Revision
+            Unlimited Revision (within 1 year)
           </Typography>
           <Typography variant="p" fontSize={"15px"}>
             <CheckIcon color="success" sx={{ marginRight: 1 }} />

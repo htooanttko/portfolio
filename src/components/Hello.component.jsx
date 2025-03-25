@@ -5,8 +5,9 @@ import { useInView } from "react-intersection-observer";
 import ProfileImage from "./common/ProfileImage.common";
 import Icons from "./common/Icons.common";
 import { contacts } from "../utils/contactlist";
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
-function Hello() {
+function Hello({ handleScroll, refs: { packagesRef } }) {
   const { ref, inView } = useInView({
     threshold: 0.1,
   });
@@ -18,6 +19,10 @@ function Hello() {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const handleViewPackages = () => {
+    handleScroll(packagesRef);
   };
 
   return (
@@ -73,9 +78,12 @@ function Hello() {
               <Button
                 variant="outlined"
                 color="secondary"
-                onClick={handleDownloadCV}
+                endIcon={<ArrowForwardIcon />}
+                // onClick={handleDownloadCV}
+                onClick={handleViewPackages}
               >
-                Download CV
+                {/* Download CV */}
+                View Packages
               </Button>
             </Stack>
             <Stack
