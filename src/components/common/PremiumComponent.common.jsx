@@ -1,10 +1,23 @@
 import React from "react";
-import { Paper, Stack, Typography } from "@mui/material";
+import {
+  Button,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Paper,
+  Stack,
+  Typography,
+} from "@mui/material";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import DiamondIcon from "@mui/icons-material/Diamond";
 
-function PremiumComponent() {
+function PremiumComponent({ handleScroll, refs: { contactRef } }) {
+  const handleViewContact = () => {
+    handleScroll(contactRef);
+  };
+
   return (
     <Paper className="p-2 py-5 flex justify-center">
       <Stack gap={4}>
@@ -16,10 +29,10 @@ function PremiumComponent() {
         >
           Premium
         </Typography>
-        <Stack spacing={1}>
+        <Stack spacing={2}>
           <Typography variant="p">
-            For enterprises & complex applications (Large business sites, custom
-            web apps, complex platforms.)
+            For enterprises & complex applications (Large business sites, Custom
+            Web Applications, basic SaaS.)
           </Typography>
           <Typography
             variant="small"
@@ -33,49 +46,71 @@ function PremiumComponent() {
             Best for large projects with more pages and advanced features
           </Typography>
         </Stack>
-        <Stack direction={"column"}>
-          <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            Everything in Standard Package +
-          </Typography>
-          <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            Advanced Hosting & Deployment (Cloud VPS, Nginx, Load Balancing)
-          </Typography>
-          <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            Backend: Multi-role access, payment integration
-          </Typography>
-          <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            Database: Replication + backups
-          </Typography>
-          <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            DevOps: Zero-downtime deployment, load balancing.
-          </Typography>
-          <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            SEO Optimization (On-page SEO + schema markup)
-          </Typography>
-          <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            Priority Support
-          </Typography>
-          <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            Unlimited Revision (within 1 year)
-          </Typography>
-          <Typography variant="p" fontSize={"15px"}>
-            <CheckIcon color="success" sx={{ marginRight: 1 }} />
-            Up to 15 Pages
-          </Typography>
-        </Stack>
-        <Stack>
-          <Typography variant="p" component={"p"}>
-            <Typography fontWeight={"bold"}>Estimated Delivery: </Typography>4 -
-            8 weeks
-          </Typography>
+
+        <Button variant="outlined" color="primary" onClick={handleViewContact}>
+          Contact for Pricing
+        </Button>
+
+        <List>
+          <ListItem>
+            <ListItemIcon>
+              <CheckIcon color="success" />
+            </ListItemIcon>
+            <ListItemText primary="Everything in Standard Package plus:" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckIcon color="success" />
+            </ListItemIcon>
+            <ListItemText primary="Advanced Hosting & Deployment (Cloud VPS, Nginx, Load Balancing)" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckIcon color="success" />
+            </ListItemIcon>
+            <ListItemText primary="Backend: Multi-role access, payment integration" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckIcon color="success" />
+            </ListItemIcon>
+            <ListItemText primary="Database: Replication + backups" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckIcon color="success" />
+            </ListItemIcon>
+            <ListItemText primary="DevOps: Zero-downtime deployment, load balancings" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckIcon color="success" />
+            </ListItemIcon>
+            <ListItemText primary="SEO Optimization (On-page SEO + schema markup)" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckIcon color="success" />
+            </ListItemIcon>
+            <ListItemText primary="Priority Support" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckIcon color="success" />
+            </ListItemIcon>
+            <ListItemText primary="Unlimited Revision (within 1 year)" />
+          </ListItem>
+          <ListItem>
+            <ListItemIcon>
+              <CheckIcon color="success" />
+            </ListItemIcon>
+            <ListItemText primary="Up to 20 Pages" />
+          </ListItem>
+        </List>
+
+        <Stack paddingX={3} spacing={2}>
+          <Typography fontWeight={"bold"}>Estimated Delivery: </Typography>
+          <Typography>4 - 8 weeks</Typography>
         </Stack>
       </Stack>
     </Paper>

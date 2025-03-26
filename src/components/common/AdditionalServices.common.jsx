@@ -1,4 +1,12 @@
-import { Paper, Stack, Typography } from "@mui/material";
+import {
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Paper,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
@@ -14,27 +22,45 @@ function AdditionalServices() {
           fontWeight={"bold"}
           marginBottom={3}
         >
-          Additional Services
+          Add-ons & Extra Charges
         </Typography>
       </Typography>
-      <Stack direction={"column"}>
-        <Typography variant="p" color="text">
-          <CheckIcon color="success" sx={{ marginRight: 1 }} />
-          More than 15 pages - Custom Pricing
-        </Typography>
-        <Typography variant="p" color="text">
-          <CheckIcon color="success" sx={{ marginRight: 1 }} />
-          Ongoing Maintenance & Support
-        </Typography>
-        <Typography variant="p" color="text">
-          <CheckIcon color="success" sx={{ marginRight: 1 }} />
-          Hosting & Domain Purchase Assistance
-        </Typography>
-        <Typography variant="p" color="text">
-          <CheckIcon color="success" sx={{ marginRight: 1 }} />
-          Extra Features (Chat, E-commerce, CRM, etc.)
-        </Typography>
-      </Stack>
+
+      <List>
+        <ListItem>
+          <ListItemIcon>
+            <CheckIcon color="success" />
+          </ListItemIcon>
+          <ListItemText sx={{ color: "text.main" }} primary="Addtional Pages" />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CheckIcon color="success" />
+          </ListItemIcon>
+          <ListItemText
+            sx={{ color: "text.main" }}
+            primary="Ongoing Maintenance & Support"
+          />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CheckIcon color="success" />
+          </ListItemIcon>
+          <ListItemText
+            sx={{ color: "text.main" }}
+            primary="Hosting & Domain Purchase Assistance , SSL Certificate Setup & Renewal"
+          />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CheckIcon color="success" />
+          </ListItemIcon>
+          <ListItemText
+            sx={{ color: "text.main" }}
+            primary="Extra Features (Chat, E-commerce, CRM, etc.)"
+          />
+        </ListItem>
+      </List>
     </Stack>
   );
 }

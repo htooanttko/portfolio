@@ -55,7 +55,12 @@ function App() {
         <Services />
       </div>
       <div ref={packagesRef}>
-        <Packages />
+        <Packages
+          handleScroll={handleScroll}
+          refs={{
+            contactRef,
+          }}
+        />
       </div>
       <div ref={contactRef}>
         <Contact />

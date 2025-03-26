@@ -9,7 +9,7 @@ import AdditionalServices from "./common/AdditionalServices.common";
 import WhyChooseUs from "./common/WhyChooseUs.common";
 import WhyRecommend from "./common/WhyRecommend.common";
 
-function Packages() {
+function Packages({ handleScroll, refs }) {
   const { ref, inView } = useInView({
     threshold: 0.1,
   });
@@ -56,13 +56,13 @@ function Packages() {
               alignContent={"start"}
               marginTop={{ md: 3, xs: 0 }}
             >
-              <BasicPlanComponent />
+              <BasicPlanComponent handleScroll={handleScroll} refs={refs} />
             </Grid>
             <Grid item xs={12} md={4} alignContent={"start"}>
-              <StandardComponent />
+              <StandardComponent handleScroll={handleScroll} refs={refs} />
             </Grid>
             <Grid item xs={12} md={4} alignContent={"start"} marginTop={3}>
-              <PremiumComponent />
+              <PremiumComponent handleScroll={handleScroll} refs={refs} />
             </Grid>
           </Grid>
           <Stack

@@ -1,4 +1,12 @@
-import { Paper, Stack, Typography } from "@mui/material";
+import {
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
+  Paper,
+  Stack,
+  Typography,
+} from "@mui/material";
 import React from "react";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
@@ -17,20 +25,36 @@ function WhyChooseUs() {
           Why Choose Us?
         </Typography>
       </Typography>
-      <Stack direction={"column"}>
-        <Typography variant="p" color="text">
-          <CheckIcon color="success" sx={{ marginRight: 1 }} />
-          Expert in Full Stack development and, Cloud, including DevOps
-        </Typography>
-        <Typography variant="p" color="text">
-          <CheckIcon color="success" sx={{ marginRight: 1 }} />
-          Scalable, Secure, and SEO-Optimized Websites
-        </Typography>
-        <Typography variant="p" color="text">
-          <CheckIcon color="success" sx={{ marginRight: 1 }} />
-          Flexible Packages Based on Your Business Needs
-        </Typography>
-      </Stack>
+
+      <List>
+        <ListItem>
+          <ListItemIcon>
+            <CheckIcon color="success" />
+          </ListItemIcon>
+          <ListItemText
+            sx={{ color: "text.main" }}
+            primary="Expert in Full-Stack Development, Cloud Solutions, and DevOps"
+          />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CheckIcon color="success" />
+          </ListItemIcon>
+          <ListItemText
+            sx={{ color: "text.main" }}
+            primary="Scalable, Secure, and SEO-Optimized Websites"
+          />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CheckIcon color="success" />
+          </ListItemIcon>
+          <ListItemText
+            sx={{ color: "text.main" }}
+            primary="Flexible Packages Based on Your Business Needs"
+          />
+        </ListItem>
+      </List>
     </Stack>
   );
 }
