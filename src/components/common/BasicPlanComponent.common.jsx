@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import DiamondIcon from "@mui/icons-material/Diamond";
@@ -54,49 +55,49 @@ function BasicPlanComponent({ handleScroll, refs: { contactRef } }) {
         <List>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Basic UI/UX Design (Figma - Predefined template customization)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Basic Frontend: Next.js or React" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Basic Backend: Express.js or PHP Laravel" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Database: MySQL or MongoDB (basic setup)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Basic Hosting & Deployment (Shared hosting)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="SEO Optimization (Basic on-page SEO, metadata)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="5 Free Revision" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Up to 5 Pages" />
           </ListItem>

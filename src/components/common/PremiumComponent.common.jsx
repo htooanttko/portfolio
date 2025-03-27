@@ -9,6 +9,7 @@ import {
   Stack,
   Typography,
 } from "@mui/material";
+import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import DiamondIcon from "@mui/icons-material/Diamond";
@@ -54,55 +55,55 @@ function PremiumComponent({ handleScroll, refs: { contactRef } }) {
         <List>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Everything in Standard Package plus:" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Advanced Hosting & Deployment (Cloud VPS, Nginx, Load Balancing)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Backend: Multi-role access, payment integration" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Database: Replication + backups" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="DevOps: Zero-downtime deployment, load balancings" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="SEO Optimization (On-page SEO + schema markup)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Priority Support" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Unlimited Revision (within 1 year)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Up to 20 Pages" />
           </ListItem>

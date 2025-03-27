@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 
@@ -28,7 +29,7 @@ function WhyRecommend() {
       <List>
         <ListItem>
           <ListItemIcon>
-            <CheckIcon color="success" />
+            <CheckBoxIcon color="text" />
           </ListItemIcon>
           <ListItemText
             sx={{ color: "text.main" }}
@@ -37,7 +38,7 @@ function WhyRecommend() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <CheckIcon color="success" />
+            <CheckBoxIcon color="text" />
           </ListItemIcon>
           <ListItemText
             sx={{ color: "text.main" }}
@@ -46,7 +47,7 @@ function WhyRecommend() {
         </ListItem>
         <ListItem>
           <ListItemIcon>
-            <CheckIcon color="success" />
+            <CheckBoxIcon color="text" />
           </ListItemIcon>
           <ListItemText
             sx={{ color: "text.main" }}

@@ -9,6 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 import React from "react";
+import CheckBoxIcon from "@mui/icons-material/CheckBox";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import DiamondIcon from "@mui/icons-material/Diamond";
@@ -69,55 +70,55 @@ function StandardComponent({ handleScroll, refs: { contactRef } }) {
         <List>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Everything in Basic Package plus:" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Custom UI/UX Design (Figma - Tailored to your brand)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Frontend: Enhanced NextJs or React UI with animations" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Backend: Advanced API structure (JWT/auth, caching)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="DevOps: CI/CD (GitHub Actions), automated testing" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="SEO Optimization (On-page + XML sitemap)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Performance & Security Enhancements (SSL, Caching, Firewalls)" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="10 Free Revision" />
           </ListItem>
           <ListItem>
             <ListItemIcon>
-              <CheckIcon color="success" />
+              <CheckBoxIcon color="primary" />
             </ListItemIcon>
             <ListItemText primary="Up to 10 Pages" />
           </ListItem>
