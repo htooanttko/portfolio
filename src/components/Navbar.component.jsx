@@ -60,8 +60,8 @@ function Navbar({ handleScroll, refs, window }) {
             color="text"
             sx={{ flexGrow: 1, display: { xs: "none", md: "block" } }}
           >
-            <Stack width={"5vh"}>
-              <Icons url={"logo.png"} type="" invert="invert(1)" />
+            <Stack width={"20vh"}>
+              <Icons url={"logo.png"} type="" />
             </Stack>
           </Typography>
           <Box sx={{ display: { xs: "none", md: "block" } }}>

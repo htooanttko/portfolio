@@ -60,10 +60,14 @@ function DrawerComponent({
       >
         <Typography
           variant="h6"
-          sx={{ my: 2, display: "flex", justifyContent: "center" }}
+          sx={{
+            display: "flex",
+            justifyContent: "center",
+            bgcolor: "text.main",
+          }}
         >
-          <Stack width={"8vh"}>
-            <Icons url={"logo.png"} type="" invert="invert(1)" />
+          <Stack width={"20vh"}>
+            <Icons url={"logo.png"} type="" />
           </Stack>
         </Typography>
         <Divider />
