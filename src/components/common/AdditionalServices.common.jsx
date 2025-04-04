@@ -32,6 +32,15 @@ function AdditionalServices() {
           <ListItemIcon>
             <CheckBoxIcon color="text" />
           </ListItemIcon>
+          <ListItemText
+            sx={{ color: "text.main" }}
+            primary="AI Integration (chatbots)"
+          />
+        </ListItem>
+        <ListItem>
+          <ListItemIcon>
+            <CheckBoxIcon color="text" />
+          </ListItemIcon>
           <ListItemText sx={{ color: "text.main" }} primary="Addtional Pages" />
         </ListItem>
         <ListItem>

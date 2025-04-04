@@ -43,7 +43,7 @@ function WhyChooseUs() {
           </ListItemIcon>
           <ListItemText
             sx={{ color: "text.main" }}
-            primary="Scalable, Secure, and SEO-Optimized Websites"
+            primary="Scalable, Secure, AI Integration (chatbots) and SEO-Optimized Websites"
           />
         </ListItem>
         <ListItem>

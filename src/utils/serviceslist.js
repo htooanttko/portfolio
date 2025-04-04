@@ -30,6 +30,12 @@ export const services = [
     url: "design.png",
   },
   {
+    title: "AI Integration",
+    description:
+      "Implementing intelligent chatbots to automate customer interactions, enhance engagement, and improve support services.",
+    url: "ai.png",
+  },
+  {
     title: "SEO Optimization ",
     description:
       "Optimizing websites for better search rankings, increased traffic, and improved online visibility using SEO best practices.",
