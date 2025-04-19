@@ -16,7 +16,7 @@ export const skills = [
     url: "react.png",
   },
   {
-    name: "Next",
+    name: "Next.js",
     url: "next.png",
   },
   {
@@ -64,16 +64,16 @@ export const skills = [
     url: "docker.png",
   },
   {
-    name: "Kubernetes",
-    url: "kubernetes.png",
-  },
-  {
     name: "Terraform",
     url: "terraform.png",
   },
   {
     name: "Ansible",
     url: "ansible.png",
+  },
+  {
+    name: "Kubernetes",
+    url: "kubernetes.png",
   },
   {
     name: "Cloud Computing",
