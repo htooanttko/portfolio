@@ -54,14 +54,14 @@ function App() {
       <div ref={servicesRef}>
         <Services />
       </div>
-      <div ref={packagesRef}>
+      {/* <div ref={packagesRef}>
         <Packages
           handleScroll={handleScroll}
           refs={{
             contactRef,
           }}
         />
-      </div>
+      </div> */}
       <div ref={contactRef}>
         <Contact />
       </div>

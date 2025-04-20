@@ -6,6 +6,7 @@ import ProfileImage from "./common/ProfileImage.common";
 import Icons from "./common/Icons.common";
 import { contacts } from "../utils/contactlist";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
+import DownloadIcon from "@mui/icons-material/Download";
 
 function Hello({ handleScroll, refs: { packagesRef } }) {
   const { ref, inView } = useInView({
@@ -78,12 +79,13 @@ function Hello({ handleScroll, refs: { packagesRef } }) {
               <Button
                 variant="outlined"
                 color="secondary"
-                endIcon={<ArrowForwardIcon />}
-                // onClick={handleDownloadCV}
-                onClick={handleViewPackages}
+                endIcon={<DownloadIcon />}
+                onClick={handleDownloadCV}
+                // endIcon={<ArrowForwardIcon />}
+                // onClick={handleViewPackages}
               >
-                {/* Download CV */}
-                View Packages
+                Download CV
+                {/* View Packages */}
               </Button>
             </Stack>
             <Stack

@@ -3,6 +3,6 @@ export const navItems = [
   "About",
   "Skills",
   "Services",
-  "Packages",
+  // "Packages",
   "Contact",
 ];
