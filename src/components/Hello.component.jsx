@@ -8,14 +8,14 @@ import { contacts } from "../utils/contactlist";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 import DownloadIcon from "@mui/icons-material/Download";
 
-function Hello({ handleScroll, refs: { packagesRef } }) {
+function Hello({ handleScroll, refs: { packagesRef, contactRef } }) {
   const { ref, inView } = useInView({
     threshold: 0.1,
   });
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/portfolio/imgs/hello/htoo_antt_ko.pdf";
+    link.href = "/imgs/hello/htoo_antt_ko.pdf";
     link.download = "htoo_antt_ko(cv).pdf";
     document.body.appendChild(link);
     link.click();
@@ -24,6 +24,10 @@ function Hello({ handleScroll, refs: { packagesRef } }) {
 
   const handleViewPackages = () => {
     handleScroll(packagesRef);
+  };
+
+  const handleViewContact = () => {
+    handleScroll(contactRef);
   };
 
   return (
@@ -79,13 +83,15 @@ function Hello({ handleScroll, refs: { packagesRef } }) {
               <Button
                 variant="outlined"
                 color="secondary"
-                endIcon={<DownloadIcon />}
-                onClick={handleDownloadCV}
-                // endIcon={<ArrowForwardIcon />}
+                // endIcon={<DownloadIcon />}
+                // onClick={handleDownloadCV}
+                endIcon={<ArrowForwardIcon />}
                 // onClick={handleViewPackages}
+                onClick={handleViewContact}
               >
-                Download CV
+                {/* Download CV */}
                 {/* View Packages */}
+                Contact Me
               </Button>
             </Stack>
             <Stack

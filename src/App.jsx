@@ -42,6 +42,7 @@ function App() {
           handleScroll={handleScroll}
           refs={{
             packagesRef,
+            contactRef,
           }}
         />
       </div>
