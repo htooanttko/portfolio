@@ -15,7 +15,7 @@ function Hello({ handleScroll, refs: { packagesRef, contactRef } }) {
 
   const handleDownloadCV = () => {
     const link = document.createElement("a");
-    link.href = "/imgs/hello/htoo_antt_ko.pdf";
+    link.href = "/imgs/hello/cv_form.pdf";
     link.download = "htoo_antt_ko(cv).pdf";
     document.body.appendChild(link);
     link.click();
@@ -83,15 +83,15 @@ function Hello({ handleScroll, refs: { packagesRef, contactRef } }) {
               <Button
                 variant="outlined"
                 color="secondary"
-                // endIcon={<DownloadIcon />}
-                // onClick={handleDownloadCV}
-                endIcon={<ArrowForwardIcon />}
+                endIcon={<DownloadIcon />}
+                onClick={handleDownloadCV}
+                // endIcon={<ArrowForwardIcon />}
                 // onClick={handleViewPackages}
-                onClick={handleViewContact}
+                // onClick={handleViewContact}
               >
-                {/* Download CV */}
+                Download CV
                 {/* View Packages */}
-                Contact Me
+                {/* Contact Me */}
               </Button>
             </Stack>
             <Stack
